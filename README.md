@@ -20,3 +20,7 @@ $./PaylodSender.sh //  Sender side
 $./PayloadReceiver.sh // Receiver side
 ```
 Follow prompts after the tool starts 
+
+
+
+![Demo run](https://github.com/bhishekarora/secure_data_transporter/blob/master/PayloadSender.png)
