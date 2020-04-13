@@ -12,3 +12,11 @@ Tamper proof Transfer with Hash checks to prevent MITM
 ```
 
 ## 📜 How to use 
+```sh
+git clone https://github.com/bhishekarora/secure_data_transporter/
+cd secure_data_transporter
+$chmod +x *
+$./PaylodSender.sh //  Sender side 
+$./PayloadReceiver.sh // Receiver side
+```
+Follow prompts after the tool starts 
