@@ -11,7 +11,8 @@ Trasnport  entire discs/mount mounts/folders to remote systems securely (SSL/MD5
 -Dont want to install any agents or target system
 -Dont have access/admin rights  on target system
 -Want some thing quick and secured to transfer disc
--Want to know the BW for uplink and time to transfer first
+-Want to do a bandwidth test for uplink before sending data
+-Need to know the time forecasting the transfer will take
 
 ```
 ## Architecture
