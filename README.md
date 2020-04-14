@@ -11,17 +11,29 @@ Trasnport  entire discs/mount mounts/folders to remote systems securely (SSL/MD5
 -Dont want to install any agents or target system
 -Dont have access/admin rights  on target system
 -Want some thing quick and secured to transfer disc
--Want to do a bandwidth test for uplink before sending data
--Need to know the time forecasting the transfer will take
+-Want to know the BW for uplink and time to transfer first
 
 ```
 ## Architecture
 ![High level Architecture](https://github.com/bhishekarora/secure_data_transporter/blob/master/img/Architecture.jpg)
 
 
-## 📜 How to use 
+## 📜 How to get Started 
+
+  
+
+
 ```sh
+Clone it 
+===============
 git clone https://github.com/bhishekarora/secure_data_transporter.git
+===============
+You can do a Pre Flight Test  to see how much of **compression**  	your cpu will be able to do and how fast you can **encrypt** the data.
+
+$ chmod +x *
+$./preflight_checklist.sh
+
+
 $ cd secure_data_transporter/sender
 $chmod +x *
 ============================
@@ -55,9 +67,12 @@ Will let you send data but also perform a bandwidth test between two systems to 
 
 
 
-
+Simple Mode
+===========
 ![Demo run without BW Test](https://github.com/bhishekarora/secure_data_transporter/blob/master/img/PayloadSender.png)
 
+BW Test Mode
+===========
 ![Demo run with BW Test](https://github.com/bhishekarora/secure_data_transporter/blob/master/img/PayloadSender_BWmode.png)
 
 
