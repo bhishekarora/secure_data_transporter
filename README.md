@@ -24,11 +24,14 @@ Trasnport  entire discs/mount mounts/folders to remote systems securely (SSL/MD5
 
 
 ```sh
+You can do a Pre Flight Test  to see how much of compression your 
+cpu will be able to do and how fast you can encrypt the data.
+
+
 Clone it 
 ===============
 git clone https://github.com/bhishekarora/secure_data_transporter.git
 ===============
-You can do a Pre Flight Test  to see how much of compression your cpu will be able to do and how fast you can encrypt the data.
 
 $ chmod +x *
 $./preflight_checklist.sh
