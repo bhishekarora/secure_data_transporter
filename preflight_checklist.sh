@@ -35,15 +35,24 @@
 hash md5sum nc du tar &>/dev/null && 
     echo "All programs installed, ** GOOD TO GO ** " ||
     echo "At least one program is missing"
+    echo "Try running $ sudo apt install netcat -y"
 echo "=========="
 echo "Checking Number of Processors"
 echo "=========="
-cat /proc/cpuinfo |grep processor
+cat /proc/cpuinfo |grep processor |wc -l
 echo "=========="
 echo "Checking Number of Cores"
 
 echo "=========="
-cat /proc/cpuinfo |grep cores
+cat /proc/cpuinfo |grep cores |wc -l
 echo "=========="
 
 echo " Compression capability will be Processors * Cores"
+
+echo "##########Testing connectivity###### ."
+echo "Enter remote system ip port where you want to send data e.g 192.168.1.4 1234" 
+read hostport 
+
+echo "Testing connectivity .... to  $hostport"
+
+nc -v $hostport
