@@ -207,8 +207,8 @@ sleep 2
              openssl aes-256-cbc -salt -pbkdf2 -in ball.tgz  -out securedball.tgz
             echo "Encryption done with AES 256 sending now to target "
             bar
-            echo ""
-            nc $host $port < securedball.tgz
+            echo ""  
+            nc $host $port <   securedball.tgz
 
             [[ "$?" -ne 0 ]] && echo -e "\nError occured exiting...check listener..." && exit
 
