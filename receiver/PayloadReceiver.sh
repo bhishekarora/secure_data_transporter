@@ -127,7 +127,7 @@ mkBanner "-" "50" "Please provide these details while starting sender utility"
                 if [ "$response" = "y"  ] ;then
 
               
-                openssl aes-256-cbc -d -salt -pbkdf2 -in securedball.tgz  -out ball.tgz
+                openssl aes-256-cbc -d  -in securedball.tgz  -out ball.tgz
                  [[ "$?" -ne 0 ]] && echo -e "\nWill exit, couldnt decrypt with pwd..." && exit
                 mkBanner "-" "50" "Uncompressing the payload "
                 bar

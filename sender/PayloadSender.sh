@@ -198,13 +198,13 @@ sleep 2
              
              fi
           
-
+ 
 
             read -p "Want to encrypt ? (y/n) " encrypt
 
             if [ "$encrypt" = "y"  ] ;then
             mkBanner "-" "50" "Starting to encrypt, enter a *PASSWORD* atleast 4 characters"
-             openssl aes-256-cbc -salt -pbkdf2 -in ball.tgz  -out securedball.tgz
+             openssl aes-256-cbc -md md5 -in ball.tgz  -out securedball.tgz
             echo "Encryption done with AES 256 sending now to target "
             bar
             echo ""  
