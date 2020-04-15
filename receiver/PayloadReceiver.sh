@@ -96,13 +96,13 @@ function mkBorder() {
 
 mkBanner "-" "50" "Payload Receiver Utility  "
 
-mkBanner "-" "50"  "Enter the IP/hostname which is reachable by the sender utility "
-read ip 
+#mkBanner "-" "50"  "Enter the IP/hostname which is reachable by the sender utility "
+#read ip 
 mkBanner "-" "50"  "Enter port to accept the payload on "
 read port 
 
 echo ""
-mkBanner "-" "50" "You will receive the file on  $ip:$port " 
+mkBanner "-" "50" "You will receive the file on  port :$port " 
 mkBanner "-" "50" "Please provide these details while starting sender utility"
 
  read -p "Will you be sending encrypted payload ? (y/n) " encrypt
