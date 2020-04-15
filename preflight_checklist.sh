@@ -38,6 +38,8 @@ hash md5sum nc du tar &>/dev/null &&
     echo "Try running $ sudo apt install netcat -y"
 echo "=========="
 
+
+
 echo "Checking Number of Processors"
 echo "=========="
 cat /proc/cpuinfo |grep processor |wc -l
