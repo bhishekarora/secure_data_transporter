@@ -142,8 +142,8 @@ fi
     
 mkBanner "-" "50" " Tar build starting......"
 
-./spinner  tar -C $path -I pigz -cf ball.tgz 
-#./spinner  tar -C  -I pigz -cf ball.tgz  --absolute-names $path
+#./spinner  tar -C $path -I pigz -cf ball.tgz 
+./spinner  tar -I pigz -cf ball.tgz  --absolute-names $path
 
 
 if [ ! -f $(pwd)/ball.tgz ]; then
