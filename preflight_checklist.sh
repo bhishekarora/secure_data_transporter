@@ -64,7 +64,7 @@ echo "=========="
 echo " Compression capability will be Processors * Cores"
 
 echo "##########Testing connectivity###### ."
-echo "Enter remote system ip port where you want to send data e.g 192.168.1.4 1234" 
+echo "Enter remote system ip port to test e.g 192.168.1.4 1234" 
 read hostport 
 
 echo "Testing connectivity .... to  $hostport"
