@@ -92,13 +92,16 @@ Encryption duration on above hardware  20 Sec
 
 Transfer time will vary with BW
 
+You can use the bandwidth mode by enabling the -b option 
+to send the payload in bandwidth mode.
+
 if ( target system inside L2/L3 switch)
 BW will be more and Time taken will be less e.g size of archive/bw
 
 if (target is remote and need ISP/External routing)
 BW will be less and time taken will be more 
 
-1 GB on 1 Mbytes/s connection will take 100s 
+To transfer 1 GB on 10 Mbytes/s connection will take 100s 
 
 ** Please note your ISP uplink speed is in bits, divide by 8 
 before doing the above calculations
