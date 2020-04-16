@@ -41,6 +41,15 @@ hash md5sum netcat du tar &>/dev/null &&
     echo "=========="
 
 
+ if hash nc 2>/dev/null; then
+       echo "This system can only act as a receiver due to the BSD netcat constraints."
+    else
+       echo "Ncat is missing.. cant continue.  "
+       
+    fi
+
+
+
 
 echo "Checking Number of Processors"
 echo "=========="

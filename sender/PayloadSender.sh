@@ -40,7 +40,7 @@
 
 
   if hash netcat 2>/dev/null; then
-       
+       echo ""
     else
        echo "########This system doesn't contain GNU netcat##### "
        echo  ""
