@@ -106,8 +106,3 @@ To transfer 1 GB on 10 Mbytes/s connection will take 100s
 ** Please note your ISP uplink speed is in bits, divide by 8 
 before doing the above calculations
 ```
-
-## Credits
-
-> BW test code is being referened from below repo 
-(https://github.com/smihir/speedtest)
