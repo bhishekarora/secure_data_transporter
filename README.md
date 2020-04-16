@@ -89,4 +89,17 @@ Intel i3@2 Ghz Dell system
 4 CPU * 2 cores (8 Threads) utilized while compression 
 
 Encryption duration on above hardware  20 Sec
+
+Transfer time will vary with BW
+
+if ( target system inside L2/L3 switch)
+BW will be more and Time taken will be less e.g size of archive/bw
+
+if (target is remote and need ISP/External routing)
+BW will be less and time taken will be more 
+
+1 GB on 1 Mbytes/s connection will take 100s 
+
+** Please note your ISP uplink speed is in bits, divide by 8 
+before doing the above calculations
 ```
