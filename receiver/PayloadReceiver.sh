@@ -36,7 +36,7 @@
 ################################################################################
 ################################################################################
 ################################################################################
-         echo ""
+        echo ""
 
                 while getopts ":hb" opt; do
                 case ${opt} in
@@ -58,7 +58,10 @@
                         echo "Found *Bandwidth Server* instance, reusing.."
 
                         else
-                        speedtest/server   &
+                        speedtest/server   & 
+                        pid=$!
+                    
+                        
 
                         fi
                           
@@ -95,6 +98,7 @@ function mkBorder() {
 
 
 mkBanner "-" "50" "Payload Receiver Utility  "
+
 
 #mkBanner "-" "50"  "Enter the IP/hostname which is reachable by the sender utility "
 #read ip 
@@ -152,3 +156,8 @@ mkBanner "-" "50" "Please provide these details while starting sender utility"
                  echo "Payload exploded in current directory"
             fi
 
+                #Cleaing the bandwidth server process..
+                if [ "$pid" != ""  ] ;then
+                kill -9 $pid
+                echo"Cleaning the pid of bw server"
+                fi
