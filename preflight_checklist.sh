@@ -34,7 +34,9 @@
 
 hash md5sum netcat du tar &>/dev/null && 
     echo "All programs installed, ** GOOD TO GO ** " ||
+    echo "=========="
     echo "At least one program from netcat/md5sum is missing"
+    echo "=========="
     echo "Try running $ sudo apt install netcat md5sum -y"
     echo "=========="
 

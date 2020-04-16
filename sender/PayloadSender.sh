@@ -38,6 +38,18 @@
 ################################################################################
 
 
+
+  if hash netcat 2>/dev/null; then
+       
+    else
+       echo "########This system doesn't contain GNU netcat##### "
+       echo  ""
+       echo "******This system can be only be used as a receiver and not as a sender****"
+    fi
+
+
+
+
 bwtest=0
             echo ""
 
@@ -208,7 +220,7 @@ sleep 2
             echo "Encryption done with AES 256 sending now to target "
             bar
             echo ""  
-            netcat -N $host $port <   securedball.tgz
+            nc -N $host $port <   securedball.tgz
 
             [[ "$?" -ne 0 ]] && echo -e "\nError occured exiting...check listener..." && exit
 
@@ -220,7 +232,7 @@ sleep 2
             else
             mkBanner "-" "50" "Trying to send"
             bar
-             netcat -N $host $port < ball.tgz
+             nc -N $host $port < ball.tgz
 
              [[ "$?" -ne 0 ]] && echo -e "\nError occured exiting.. check listener.." && exit
 

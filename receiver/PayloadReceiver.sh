@@ -113,7 +113,7 @@ mkBanner "-" "50" "Please provide these details while starting sender utility"
 
             if [ "$encrypt" = "y"  ] ;then
             mkBanner "-" "50" "Waiting for the encrypted payload "
-                 netcat -l -p $port > securedball.tgz  < /dev/null
+                 nc -l -p $port > securedball.tgz  < /dev/null
                 mkBanner "-" "50" "Encrypted payload received"
                
 
@@ -147,7 +147,7 @@ mkBanner "-" "50" "Please provide these details while starting sender utility"
 
             else
                 mkBanner "-" "50" "Waiting for the unencrypted payload"
-                netcat -l -p $port > ball.tgz  < /dev/null
+                nc -l -p $port > ball.tgz  < /dev/null
                 mkBanner "-" "50" "Unencrypted payload received , uncompressing"
                 bar
                 
