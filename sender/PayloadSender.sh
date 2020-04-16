@@ -208,7 +208,7 @@ sleep 2
             echo "Encryption done with AES 256 sending now to target "
             bar
             echo ""  
-            nc $host $port <   securedball.tgz
+            nc -N $host $port <   securedball.tgz
 
             [[ "$?" -ne 0 ]] && echo -e "\nError occured exiting...check listener..." && exit
 
@@ -220,7 +220,7 @@ sleep 2
             else
             mkBanner "-" "50" "Trying to send"
             bar
-             nc $host $port < ball.tgz
+             nc -N $host $port < ball.tgz
 
              [[ "$?" -ne 0 ]] && echo -e "\nError occured exiting.. check listener.." && exit
 
